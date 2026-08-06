@@ -16,5 +16,5 @@ project:
   team: "B14 MX_UPP_INAOE"                      # Your Team name
   discord: "lcas_56805"                   # Optional: Discord username (for support / communication)
   description: "An Open-Source Integrated Potentiostat for AI-Driven Electrochemical Fingerprinting and Sample Identification"  # Short one-line description
-  lvs_config: "<relative-path-to-lvs_config.json>"
+  lvs_config: "lvs_config.json"
 
