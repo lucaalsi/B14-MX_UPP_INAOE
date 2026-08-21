@@ -18,3 +18,56 @@ project:
   description: "An Open-Source Integrated Potentiostat for AI-Driven Electrochemical Fingerprinting and Sample Identification"  # Short one-line description
   lvs_config: "lvs_config.json"
 
+pins: 
+  - name: B6
+    io_type: analog
+    secondary_esd: true
+  - name: B4
+    io_type: analog
+    secondary_esd: true
+  - name: B2
+    io_type: analog
+    secondary_esd: true
+  - name: B0
+    io_type: analog
+    secondary_esd: true
+  - name: VREF_P
+    io_type: analog
+    secondary_esd: false
+  - name: VREF_N
+    io_type: analog
+    secondary_esd: false
+  - name: B1
+    io_type: analog
+    secondary_esd: true
+  - name: B3
+    io_type: analog
+    secondary_esd: true
+  - name: B5
+    io_type: analog
+    secondary_esd: true
+  - name: B7
+    io_type: analog
+    secondary_esd: true  
+  - name: VbiasN
+    io_type: analog
+    secondary_esd: true
+  - name: RE
+    io_type: analog
+    secondary_esd: false  
+  - name: AGND
+    io_type: analog
+    secondary_esd: true
+  - name: WE
+    io_type: analog
+    secondary_esd: true
+  - name: VDD
+    io_type: power
+  - name: TIA_R
+    io_type: analog
+    secondary_esd: false
+  - name: CE
+    io_type: analog
+    secondary_esd: false    
+  - name: VSS
+    io_type: ground  
