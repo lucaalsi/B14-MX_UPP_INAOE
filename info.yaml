@@ -19,6 +19,8 @@ project:
   lvs_config: "lvs_config.json"
 
 pins: 
+  - name: VSS
+    io_type: ground 
   - name: B6
     io_type: analog
     secondary_esd: true
@@ -69,5 +71,4 @@ pins:
   - name: CE
     io_type: analog
     secondary_esd: false    
-  - name: VSS
-    io_type: ground  
+ 
