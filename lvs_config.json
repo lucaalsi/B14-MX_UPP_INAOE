@@ -20,9 +20,8 @@
 	"LVS_IGNORE": [
 		""
 	],
-	"LVS_SPICE_FILES": [
-		""
-	],
+	"LVS_SPICE_FILES": "$UPRJ_ROOT/lvs/B14_A.spice",
+	
 	"LVS_VERILOG_FILES": [
 		""
 	],
