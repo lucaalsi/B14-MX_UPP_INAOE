@@ -1,0 +1,244 @@
+
+Cell pfet_03v3 (1) disconnected node: drain
+Cell pfet_03v3 (1) disconnected node: gate
+Cell pfet_03v3 (1) disconnected node: source
+Cell pfet_03v3 (1) disconnected node: bulk
+Equate elements:  no current cell.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Cell nfet_03v3 (1) disconnected node: drain
+Cell nfet_03v3 (1) disconnected node: gate
+Cell nfet_03v3 (1) disconnected node: source
+Cell nfet_03v3 (1) disconnected node: bulk
+Equate elements:  no current cell.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0fF are black boxes.
+Equate elements:  no current cell.
+Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0fF are equivalent.
+
+Circuit 1 cell ppolyf_u and Circuit 2 cell ppolyf_u are black boxes.
+Equate elements:  no current cell.
+Device classes ppolyf_u and ppolyf_u are equivalent.
+Flattening unmatched subcell pfet_03v3_5UM88N in circuit TG_3v3_sch (0)(3 instances)
+Flattening unmatched subcell nfet_03v3_PVNWSJ in circuit TG_3v3_sch (0)(3 instances)
+
+Class TG_3v3_sch (0):  Merged 54 parallel devices.
+Subcircuit summary:
+Circuit 1: TG_3v3_sch                      |Circuit 2: TG_3v3_sch                      
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (30->3)                          |pfet_03v3 (3)                              
+nfet_03v3 (30->3)                          |nfet_03v3 (3)                              
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: TG_3v3_sch                      |Circuit 2: TG_3v3_sch                      
+-------------------------------------------|-------------------------------------------
+BIT                                        |BIT                                        
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+Out                                        |Out                                        
+VREF_N                                     |VREF_N                                     
+VREF_P                                     |VREF_P                                     
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes TG_3v3_sch and TG_3v3_sch are equivalent.
+Flattening unmatched subcell cap_mim_2p0fF_A472LY in circuit Amplificador_prueba (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_NVCL9G in circuit Amplificador_prueba (0)(2 instances)
+Flattening unmatched subcell nfet_03v3_8GZTUE in circuit Amplificador_prueba (0)(2 instances)
+Flattening unmatched subcell pfet_03v3_UKHJDJ in circuit Amplificador_prueba (0)(2 instances)
+Flattening unmatched subcell nfet_03v3_XXA63P in circuit Amplificador_prueba (0)(2 instances)
+Flattening unmatched subcell nfet_03v3_V2UEBS in circuit Amplificador_prueba (0)(1 instance)
+Flattening unmatched subcell pfet_03v3_AHZDT7 in circuit Amplificador_prueba (0)(1 instance)
+Flattening unmatched subcell pfet_03v3_YKEBGY in circuit Amplificador_prueba (0)(4 instances)
+Flattening unmatched subcell nfet_03v3_3TXW8V in circuit Amplificador_prueba (0)(1 instance)
+Flattening unmatched subcell ppolyf_u_DNRAWG in circuit Amplificador_prueba (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_NJPXY5 in circuit Amplificador_prueba (0)(2 instances)
+Flattening unmatched subcell pfet_03v3_PBQ2EP in circuit Amplificador_prueba (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_Q95E6K in circuit Amplificador_prueba (0)(1 instance)
+Flattening unmatched subcell pfet_03v3_K3SXZC in circuit Amplificador_prueba (0)(1 instance)
+Flattening unmatched subcell pfet_03v3_W6FBYK in circuit Amplificador_prueba (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_5CLEH3 in circuit Amplificador_prueba (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_2N9DRS in circuit Amplificador_prueba (0)(1 instance)
+
+Class Amplificador_prueba (0):  Merged 201 parallel devices.
+Class Amplificador_prueba (1):  Merged 7 parallel devices.
+Subcircuit summary:
+Circuit 1: Amplificador_prueba             |Circuit 2: Amplificador_prueba             
+-------------------------------------------|-------------------------------------------
+cap_mim_2f0_m4m5_noshield (1)              |cap_mim_2f0fF (1)                          
+nfet_03v3 (50->10)                         |nfet_03v3 (13->10)                         
+pfet_03v3 (170->9)                         |pfet_03v3 (13->9)                          
+ppolyf_u (1)                               |ppolyf_u (1)                               
+Number of devices: 21                      |Number of devices: 21                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: Amplificador_prueba             |Circuit 2: Amplificador_prueba             
+-------------------------------------------|-------------------------------------------
+VDDH                                       |VDDH                                       
+VinN                                       |VinN                                       
+VinP                                       |VinP                                       
+VSS                                        |VSS                                        
+VbiasN                                     |VbiasN                                     
+Vout                                       |Vout                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes Amplificador_prueba and Amplificador_prueba are equivalent.
+Flattening unmatched subcell ppolyf_u_XQH9GD in circuit DAC8BR2R_3v3 (0)(10 instances)
+Flattening unmatched subcell ppolyf_u_9F2SSU in circuit DAC8BR2R_3v3 (0)(8 instances)
+
+Subcircuit summary:
+Circuit 1: DAC8BR2R_3v3                    |Circuit 2: DAC8BR2R_3v3                    
+-------------------------------------------|-------------------------------------------
+TG_3v3_sch (8)                             |TG_3v3_sch (8)                             
+Amplificador_prueba (1)                    |Amplificador_prueba (1)                    
+ppolyf_u (18)                              |ppolyf_u (18)                              
+Number of devices: 27                      |Number of devices: 27                      
+Number of nets: 32                         |Number of nets: 32                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: DAC8BR2R_3v3                    |Circuit 2: DAC8BR2R_3v3                    
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+B0                                         |B0                                         
+B7                                         |B7                                         
+B1                                         |B1                                         
+B2                                         |B2                                         
+B5                                         |B5                                         
+B3                                         |B3                                         
+B4                                         |B4                                         
+B6                                         |B6                                         
+VbiasN                                     |VbiasN                                     
+OUT                                        |OUT                                        
+AGND                                       |AGND                                       
+VDD                                        |VDD                                        
+VREF_P                                     |VREF_P                                     
+VREF_N                                     |VREF_N                                     
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes DAC8BR2R_3v3 and DAC8BR2R_3v3 are equivalent.
+Flattening unmatched subcell nfet_03v3_V2UEBS_1 in circuit BIAS_3v3 (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_V2UEBS_0 in circuit BIAS_3v3 (0)(1 instance)
+Flattening unmatched subcell pfet_03v3_E7RYUB in circuit BIAS_3v3 (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_KVBDJ8 in circuit BIAS_3v3 (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_NVCL9G_0 in circuit BIAS_3v3 (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_NVCL9G_1 in circuit BIAS_3v3 (0)(1 instance)
+Flattening unmatched subcell pfet_03v3_NFMJS6 in circuit BIAS_3v3 (0)(1 instance)
+Flattening unmatched subcell nfet_03v3_W7XH28 in circuit BIAS_3v3 (0)(1 instance)
+
+Class BIAS_3v3 (0):  Merged 55 parallel devices.
+Class BIAS_3v3 (1):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: BIAS_3v3                        |Circuit 2: BIAS_3v3                        
+-------------------------------------------|-------------------------------------------
+nfet_03v3 (27->4)                          |nfet_03v3 (6->4)                           
+pfet_03v3 (34->2)                          |pfet_03v3 (4->2)                           
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 5                          |Number of nets: 5                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: BIAS_3v3                        |Circuit 2: BIAS_3v3                        
+-------------------------------------------|-------------------------------------------
+VDDH                                       |VDDH                                       
+VbiasP                                     |VbiasP                                     
+VSS                                        |VSS                                        
+VbiasN                                     |VbiasN                                     
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes BIAS_3v3 and BIAS_3v3 are equivalent.
+Flattening unmatched subcell ppolyf_u_9F2SSU in circuit ASIC_final (0)(2 instances)
+
+Subcircuit summary:
+Circuit 1: ASIC_final                      |Circuit 2: ASIC_final                      
+-------------------------------------------|-------------------------------------------
+DAC8BR2R_3v3 (1)                           |DAC8BR2R_3v3 (1)                           
+Amplificador_prueba (3)                    |Amplificador_prueba (3)                    
+ppolyf_u (2)                               |ppolyf_u (2)                               
+BIAS_3v3 (1)                               |BIAS_3v3 (1)                               
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 22                         |Number of nets: 22                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: ASIC_final                      |Circuit 2: ASIC_final                      
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+RE                                         |RE                                         
+WE                                         |WE                                         
+TIA_R                                      |TIA_R                                      
+CE                                         |CE                                         
+VREF_N                                     |VREF_N                                     
+VREF_P                                     |VREF_P                                     
+B4                                         |B4                                         
+B6                                         |B6                                         
+B2                                         |B2                                         
+B0                                         |B0                                         
+B1                                         |B1                                         
+B3                                         |B3                                         
+B5                                         |B5                                         
+B7                                         |B7                                         
+AGND                                       |AGND                                       
+VDD                                        |VDD                                        
+VbiasN                                     |VbiasN                                     
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ASIC_final and ASIC_final are equivalent.
+
+Flattening instances of BIAS_3v3 in cell ASIC_final (1) makes a better match
+Flattening instances of ASIC_final in cell B14_A (0) makes a better match
+Making another compare attempt.
+
+Flattening instances of BIAS_3v3 in cell B14_A (0) makes a better match
+Making another compare attempt.
+
+Subcircuit summary:
+Circuit 1: B14_A                           |Circuit 2: ASIC_final                      
+-------------------------------------------|-------------------------------------------
+DAC8BR2R_3v3 (1)                           |DAC8BR2R_3v3 (1)                           
+Amplificador_prueba (3)                    |Amplificador_prueba (3)                    
+ppolyf_u (2)                               |ppolyf_u (2)                               
+nfet_03v3 (6->4)                           |nfet_03v3 (6->4)                           
+pfet_03v3 (3->2)                           |pfet_03v3 (3->2)                           
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 23                         |Number of nets: 23                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: B14_A                           |Circuit 2: ASIC_final                      
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+VbiasN                                     |VbiasN                                     
+AGND                                       |AGND                                       
+RE                                         |RE                                         
+WE                                         |WE                                         
+TIA_R                                      |TIA_R                                      
+CE                                         |CE                                         
+VREF_N                                     |VREF_N                                     
+VREF_P                                     |VREF_P                                     
+B4                                         |B4                                         
+B6                                         |B6                                         
+B2                                         |B2                                         
+B0                                         |B0                                         
+B1                                         |B1                                         
+B3                                         |B3                                         
+B5                                         |B5                                         
+B7                                         |B7                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes B14_A and ASIC_final are equivalent.
+
+Final result: Circuits match uniquely.
+.

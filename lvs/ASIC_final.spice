@@ -1,0 +1,115 @@
+** sch_path: /foss/designs/Chipaton2026_v2/ASIC_final.sch
+.subckt ASIC_final VSS VDD B6 B4 B2 B0 VREF_P VREF_N B1 B3 B5 B7 VbiasN RE AGND WE TIA_R CE
+*.PININFO VDD:I AGND:I VbiasN:I VREF_P:I VREF_N:I VSS:I RE:B WE:B CE:B B5:I B3:I B2:I B1:I B0:I B4:I B6:I B7:I TIA_R:I
+XR5 net2 net1 VSS ppolyf_u r_width=1.41u r_length=40u
+XR13 net1 Vin VSS ppolyf_u r_width=1.41u r_length=40u
+x3 VDD RE net2 net2 VbiasN VSS Amplificador_prueba
+x4 VDD AGND WE TIA_R VbiasN VSS Amplificador_prueba
+x1 VDD AGND net1 CE VbiasN VSS Amplificador_prueba
+x2 VDD net3 VbiasN VSS BIAS_3v3
+x5 VSS VbiasN AGND Vin VDD VREF_N VREF_P B4 B6 B2 B0 B1 B3 B5 B7 DAC8BR2R_3v3
+.ends
+
+* expanding   symbol:  AMPLIFICADOR/Amplificador_prueba.sym # of pins=6
+** sym_path: /foss/designs/Chipaton2026_v2/AMPLIFICADOR/Amplificador_prueba.sym
+** sch_path: /foss/designs/Chipaton2026_v2/AMPLIFICADOR/Amplificador_prueba.sch
+.subckt Amplificador_prueba VDDH VinP VinN Vout VbiasN VSS
+*.PININFO VbiasN:I VSS:B VDDH:B VinN:I VinP:I Vout:B
+XR1 RC netRC VSS ppolyf_u r_width=1u r_length=6.74u
+M11 net2 VbiasN VSS VSS nfet_03v3 L=1.2u W=34u nf=8
+M7 net1 net1 VDDH VDDH pfet_03v3 L=1.2u W=73u nf=16
+M8 netRC net1 VDDH VDDH pfet_03v3 L=1.2u W=73u nf=16
+M9 net1 VinN net2 VSS nfet_03v3 L=1.2u W=21u nf=5
+M10 netRC VinP net2 VSS nfet_03v3 L=1.2u W=21u nf=5
+M12 netRC VBP VDDH VDDH pfet_03v3 L=1.2u W=73u nf=16
+M13 net3 VCP netRC VDDH pfet_03v3 L=1.2u W=41u nf=8
+M14 netRC VCN net3 VSS nfet_03v3 L=1.2u W=10u nf=4
+M15 net3 VbiasN VSS VSS nfet_03v3 L=1.2u W=17u nf=4
+M16 Vout netRC VDDH VDDH pfet_03v3 L=1.2u W=52u nf=16
+M17 Vout net3 VSS VSS nfet_03v3 L=1.2u W=35u nf=8
+M1 VBP VBP VDDH VDDH pfet_03v3 L=1.2u W=73u nf=16
+M2 VCP VCP VBP VDDH pfet_03v3 L=1.2u W=76u nf=16
+M3 VCP VbiasN VSS VSS nfet_03v3 L=1.2u W=17u nf=4
+M4 VCN VBP VDDH VDDH pfet_03v3 L=1.2u W=39u nf=16
+M5 VCN VCN vbN VSS nfet_03v3 L=1.2u W=19.5u nf=4
+M6 vbN vbN VSS VSS nfet_03v3 L=1.2u W=15.5u nf=4
+M18 VDDH VDDH VDDH VDDH pfet_03v3 L=1.2u W=4.56u nf=1
+M21 VDDH VDDH VDDH VDDH pfet_03v3 L=1.2u W=4.56u nf=1
+M20 VSS VSS VSS VSS nfet_03v3 L=1.2u W=4.25u nf=1
+M19 VSS VSS VSS VSS nfet_03v3 L=1.2u W=4.25u nf=1
+M23 VSS VSS VSS VSS nfet_03v3 L=1.2u W=4.2u nf=1
+M22 VSS VSS VSS VSS nfet_03v3 L=1.2u W=4.2u nf=1
+M24 VCN VBP VDDH VDDH pfet_03v3 L=1.2u W=39u nf=16
+M25 Vout netRC VDDH VDDH pfet_03v3 L=1.2u W=52u nf=16
+M26 Vout netRC VDDH VDDH pfet_03v3 L=1.2u W=52u nf=16
+XC1 RC Vout cap_mim_2f0fF c_width=27.22u c_length=27.22u
+.ends
+
+
+* expanding   symbol:  BIAS/BIAS_3v3.sym # of pins=4
+** sym_path: /foss/designs/Chipaton2026_v2/BIAS/BIAS_3v3.sym
+** sch_path: /foss/designs/Chipaton2026_v2/BIAS/BIAS_3v3.sch
+.subckt BIAS_3v3 VDDH VbiasP VbiasN VSS
+*.PININFO VbiasN:I VSS:I VbiasP:O VDDH:I
+M1 VbiasN VbiasN VSS VSS nfet_03v3 L=1.2u W=34u nf=8
+M2 net1 VbiasN VSS VSS nfet_03v3 L=1.2u W=34u nf=8
+M3 VbiasP VbiasP net1 VSS nfet_03v3 L=1.2u W=46u nf=8
+M4 VbiasP VbiasP VDDH VDDH pfet_03v3 L=1.2u W=73u nf=16
+M5 VSS VSS VSS VSS nfet_03v3 L=1.2u W=4.25u nf=1
+M6 VSS VSS VSS VSS nfet_03v3 L=1.2u W=4.25u nf=1
+M7 VDDH VDDH VDDH VDDH pfet_03v3 L=1.2u W=4.56u nf=1
+M8 VSS VSS VSS VSS nfet_03v3 L=1.2u W=5.75u nf=1
+M9 VbiasP VbiasP VDDH VDDH pfet_03v3 L=1.2u W=73u nf=16
+M10 VDDH VDDH VDDH VDDH pfet_03v3 L=1.2u W=4.56u nf=1
+.ends
+
+
+* expanding   symbol:  DAC/DAC8BR2R_3v3.sym # of pins=15
+** sym_path: /foss/designs/Chipaton2026_v2/DAC/DAC8BR2R_3v3.sym
+** sch_path: /foss/designs/Chipaton2026_v2/DAC/DAC8BR2R_3v3.sch
+.subckt DAC8BR2R_3v3 VSS VbiasN AGND OUT VDD VREF_N VREF_P B4 B6 B2 B0 B1 B3 B5 B7
+*.PININFO AGND:B OUT:B VREF_P:B VREF_N:B VSS:B VDD:B VbiasN:B B7:B B6:B B5:B B4:B B3:B B2:B B1:B B0:B
+XR20 net9 net8 VSS ppolyf_u r_width=1.41u r_length=80u
+XR13 net1 net2 VSS ppolyf_u r_width=1.41u r_length=40u
+XR16 net5 net6 VSS ppolyf_u r_width=1.41u r_length=40u
+XR18 net7 net8 VSS ppolyf_u r_width=1.41u r_length=40u
+XR10 net2 net3 VSS ppolyf_u r_width=1.41u r_length=40u
+XR19 net8 out1 VSS ppolyf_u r_width=1.41u r_length=40u
+XR22 out1 OUT VSS ppolyf_u r_width=1.41u r_length=80u
+XR14 net3 net4 VSS ppolyf_u r_width=1.41u r_length=40u
+XR15 net4 net5 VSS ppolyf_u r_width=1.41u r_length=40u
+XR1 net15 net2 VSS ppolyf_u r_width=1.41u r_length=80u
+XR2 net14 net3 VSS ppolyf_u r_width=1.41u r_length=80u
+XR3 net13 net4 VSS ppolyf_u r_width=1.41u r_length=80u
+XR4 net12 net5 VSS ppolyf_u r_width=1.41u r_length=80u
+XR5 net16 net1 VSS ppolyf_u r_width=1.41u r_length=80u
+XR8 net11 net6 VSS ppolyf_u r_width=1.41u r_length=80u
+XR9 net10 net7 VSS ppolyf_u r_width=1.41u r_length=80u
+XR21 AGND net1 VSS ppolyf_u r_width=1.41u r_length=80u
+XR17 net6 net7 VSS ppolyf_u r_width=1.41u r_length=40u
+x1 VREF_P VDD net16 B0 VREF_N VSS TG_3v3_sch
+x2 VREF_P VDD net15 B1 VREF_N VSS TG_3v3_sch
+x3 VREF_P VDD net14 B2 VREF_N VSS TG_3v3_sch
+x4 VREF_P VDD net13 B3 VREF_N VSS TG_3v3_sch
+x5 VREF_P VDD net12 B4 VREF_N VSS TG_3v3_sch
+x6 VREF_P VDD net11 B5 VREF_N VSS TG_3v3_sch
+x7 VREF_P VDD net10 B6 VREF_N VSS TG_3v3_sch
+x8 VREF_P VDD net9 B7 VREF_N VSS TG_3v3_sch
+x9 VDD AGND out1 OUT VbiasN VSS Amplificador_prueba
+.ends
+
+
+* expanding   symbol:  DAC/TG_3v3_sch.sym # of pins=6
+** sym_path: /foss/designs/Chipaton2026_v2/DAC/TG_3v3_sch.sym
+** sch_path: /foss/designs/Chipaton2026_v2/DAC/TG_3v3_sch.sch
+.subckt TG_3v3_sch VREF_P VDD Out BIT VREF_N VSS
+*.PININFO VREF_P:B VREF_N:B Out:B BIT:B VDD:B VSS:B
+M4 net1 BIT VDD VDD pfet_03v3 L=0.6u W=75u nf=10
+M6 net1 BIT VSS VSS nfet_03v3 L=0.6u W=50u nf=10
+M1 Out BIT VREF_P VDD pfet_03v3 L=0.6u W=75u nf=10
+M5 Out net1 VREF_P VSS nfet_03v3 L=0.6u W=50u nf=10
+M3 Out net1 VREF_N VDD pfet_03v3 L=0.6u W=75u nf=10
+M2 Out BIT VREF_N VSS nfet_03v3 L=0.6u W=50u nf=10
+.ends
+
+.GLOBAL VSS
