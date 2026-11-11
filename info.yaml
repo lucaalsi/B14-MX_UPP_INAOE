@@ -17,6 +17,12 @@ project:
   discord: "lcas_56805"                   # Optional: Discord username (for support / communication)
   description: "An Open-Source Integrated Potentiostat for AI-Driven Electrochemical Fingerprinting and Sample Identification"  # Short one-line description
   lvs_config: "lvs_config.json"
+  gf_def_ready: true
+  ws_def_ready: true
+  drc_ready: true
+  lvs_ready: true
+  export_control: "docs/Export_Control_GF_Rev8.2.docx"
+  
 
 pins: 
   - name: VSS
