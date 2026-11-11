@@ -1,5 +1,5 @@
 
-# How to Test the ASIC
+# How to Test
 
 Figure 1 shows the ASIC block diagram, including its terminals (pins) and the required connections. The system consists of a potentiostat circuit designed for electrochemical analysis.
 
